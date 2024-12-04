@@ -1,3 +1,4 @@
+/* ==========Main Styling========== */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
  margin: 0;
@@ -11,14 +12,10 @@ ul {
 a {
  text-decoration: none;
 }
-.app {
- position: relative;
- height: 100vh;
- overflow: hidden;
-}
+/* ==========Start Main Nav========== */
 .app nav {
- z-index: 2;
- position: absolute;
+ z-index: 100;
+ position: fixed;
  width: 100%;
  display: flex;
  justify-content: space-between;
@@ -38,9 +35,10 @@ a {
  margin: 25px 150px 0 0;
 }
 .app nav ul li a {
+ letter-spacing: 5px;
  color: #c2c2c2;
- font-size: 35px;
- margin-right: 40px;
+ font-size: 30px;
+ margin-right: 50px;
  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
  position: relative;
  text-transform: uppercase;
@@ -62,61 +60,19 @@ a {
 .app nav ul li a.active {
  color: #fff;
 }
-.owl-carousel,
-.owl-stage-outer,
-.owl-stage,
-.owl-item {
- height: 100%;
- width: 100%;
- overflow: hidden;
+/* ==========Start Footer========== */
+.app footer {
+ position: fixed;
+ bottom: 15px;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: 1;
 }
-.app .item {
- height: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- overflow: hidden;
- width: 100%;
+.app footer i {
+ color: #ccc;
+ font-size: 25px;
+ margin-left: 35px;
 }
-video {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- object-fit: cover;
- z-index: -1;
-}
-.owl-dots {
- position: absolute;
- top: 50%;
- right: 10px;
- z-index: 2;
- height: 500px;
- width: 300px;
- display: flex;
- flex-direction: column;
- align-items: end;
- justify-content: center;
- transform: translateY(-50%);
-}
-.owl-dots .owl-dot {
- height: 12px;
- width: 12px;
- background-color: #fff !important;
- border-radius: 50%;
- margin-bottom: 10px;
-}
-.owl-dots .owl-dot.active {
- background-color: black !important;
- border: 1px solid #fff;
-}
-.app .element-text {
- position: absolute;
- bottom: 40px;
- left: 50px;
+.app footer i:hover {
  color: #fff;
- font-size: 60px;
- text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
- z-index: 2;
 }
