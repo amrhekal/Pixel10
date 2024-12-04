@@ -17,11 +17,17 @@ a {
  overflow: hidden;
 }
 .app nav {
- height: 0;
  z-index: 2;
- position: relative;
+ position: absolute;
+ width: 100%;
  display: flex;
  justify-content: space-between;
+ background: rgb(34, 34, 34);
+ background: linear-gradient(
+  180deg,
+  rgba(34, 34, 34, 1) 0%,
+  rgba(255, 255, 255, 0) 100%
+ );
 }
 .app nav svg {
  height: 50px;
@@ -32,8 +38,7 @@ a {
  margin: 25px 150px 0 0;
 }
 .app nav ul li a {
- /* color: #a3afb4; */
- color: #d2e0e7;
+ color: #c2c2c2;
  font-size: 35px;
  margin-right: 40px;
  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
