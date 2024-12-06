@@ -77,3 +77,19 @@
 .app .arrow-up:hover i {
  color: #fff;
 }
+/* Media */
+@media (max-width: 1400px) {
+ .image-container .row .image-box .box-title {
+  left: -70%;
+ }
+}
+@media (max-width: 1000px) {
+ .image-container .row {
+  width: 50%;
+ }
+}
+@media (max-width: 768px) {
+ .image-container .row {
+  width: 95%;
+ }
+}

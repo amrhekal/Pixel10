@@ -142,3 +142,46 @@
 .owl-dots .owl-dot.active::after {
  color: #fff;
 }
+/* Media */
+
+@media (max-width: 1000px) {
+ .app .owl-carousel .item h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+ }
+ .app .owl-carousel .item p {
+  font-size: 18px;
+ }
+ .owl-dots .owl-dot {
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+ }
+ .owl-dots .owl-dot:hover {
+  border: 2px solid #fff !important;
+ }
+ .owl-dots .owl-dot.active {
+  border: 2px solid #fff !important;
+ }
+
+ .owl-dots .owl-dot:first-child::after {
+  content: "1";
+ }
+ .owl-dots .owl-dot::before {
+  width: 0 !important;
+ }
+ .owl-dots .owl-dot:nth-of-type(2)::after {
+  content: "2";
+ }
+ .owl-dots .owl-dot:nth-of-type(3)::after {
+  content: "3";
+ }
+ .owl-dots .owl-dot:nth-of-type(4)::after {
+  content: "4";
+ }
+ .owl-dots .owl-dot:nth-of-type(5)::after {
+  content: "5";
+ }
+}

@@ -32,22 +32,28 @@ a {
  height: 50px;
  margin-left: 10px;
 }
+.app nav i {
+ font-size: 30px;
+ cursor: pointer;
+ display: none;
+}
 .app nav ul {
  display: flex;
  align-items: center;
  margin-left: 25px;
+ transition: 0.5s;
 }
-.app nav ul li a {
+.app nav ul li:not(:last-child) a {
  letter-spacing: 5px;
  color: #c2c2c2;
- font-size: 30px;
+ font-size: 25px;
  margin-right: 50px;
  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
  position: relative;
  text-transform: uppercase;
  transition: 0.3s;
 }
-.app nav ul li a::after {
+.app nav ul li:not(:last-child) a::after {
  content: "";
  position: absolute;
  width: 0;
@@ -60,12 +66,21 @@ a {
 .app nav ul li a:hover {
  color: #fff;
 }
-.app nav ul li a:hover::after {
+.app nav ul li:not(:last-child) a:hover::after {
  width: 100%;
  left: 0;
 }
 .app nav ul li a.active {
  color: #fff;
+}
+.app nav li:last-child {
+ display: flex;
+ justify-content: center;
+}
+.app nav li:last-child a {
+ color: #ccc;
+ font-size: 25px;
+ margin: 0 10px;
 }
 /* ==========Start Footer========== */
 .app footer {
@@ -82,4 +97,55 @@ a {
 }
 .app footer i:hover {
  color: #fff;
+}
+/* ==========Media========== */
+@media (max-width: 1000px) {
+ .app nav i {
+  display: block;
+ }
+ .app nav {
+  flex-wrap: wrap;
+ }
+ .app nav svg {
+  height: 30px;
+  margin-left: 5px;
+ }
+ .app nav ul {
+  margin: 20px 0 0 0;
+  width: 100%;
+  flex-direction: column;
+  background-color: #252525;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 0;
+  text-align: center;
+ }
+ .app nav ul li {
+  margin: 10px 0;
+  width: 100%;
+ }
+ .app nav ul li a {
+  text-align: center;
+ }
+ .app nav ul li:not(:last-child) a {
+  margin-right: 0px;
+ }
+ .app nav ul li:first-child {
+  margin-top: 20px;
+ }
+ .app nav ul li:last-child {
+  margin-bottom: 20px;
+  text-align: c;
+ }
+ .app nav ul li:last-child i {
+  font-size: 25px;
+ }
+ footer {
+  display: none;
+ }
+}
+@media (max-width: 576px) {
+ .app nav ul li:last-child i {
+  margin: 0;
+ }
 }

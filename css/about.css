@@ -4,7 +4,13 @@
  height: 100vh;
  overflow: hidden;
 }
-.app .about-text {
+.app .overlay {
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.3);
+}
+.app .overlay .about-text {
  position: absolute;
  top: 50%;
  transform: translateY(-50%);
@@ -24,12 +30,7 @@
  object-fit: cover;
  z-index: -1;
 }
-.app .overlay {
- position: absolute;
- height: 100%;
- width: 100%;
- background-color: rgba(0, 0, 0, 0.3);
-}
+
 .app .services {
  position: absolute;
  top: 80%;
@@ -78,5 +79,21 @@
  }
  100% {
   color: rgba(255, 255, 255, 0.2);
+ }
+}
+/* Media */
+@media (max-width: 576px) {
+ .app .overlay .about-text {
+  margin: auto;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+ }
+ .app .overlay .about-text p {
+  width: 80%;
+  margin: auto;
+ }
+ .app .services {
+  font-size: 26px;
+  margin-top: 50px;
  }
 }

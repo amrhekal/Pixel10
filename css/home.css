@@ -58,7 +58,18 @@ video {
  bottom: 60px;
  left: 50px;
  color: #fff;
- font-size: 60px;
+ font-size: 50px;
  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  z-index: 2;
+}
+/* Media */
+@media (max-width: 1000px) {
+ .app .element-text {
+  font-size: 40px;
+ }
+}
+@media (max-width: 576px) {
+ .app .element-text {
+  font-size: 30px;
+ }
 }
