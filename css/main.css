@@ -19,6 +19,8 @@ a {
  width: 100%;
  display: flex;
  justify-content: space-between;
+ align-items: center;
+ padding: 25px;
  background: rgb(34, 34, 34);
  background: linear-gradient(
   180deg,
@@ -28,11 +30,12 @@ a {
 }
 .app nav svg {
  height: 50px;
- margin: 25px 35px;
+ margin-left: 10px;
 }
 .app nav ul {
  display: flex;
- margin: 25px 150px 0 0;
+ align-items: center;
+ margin-left: 25px;
 }
 .app nav ul li a {
  letter-spacing: 5px;
@@ -42,6 +45,7 @@ a {
  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
  position: relative;
  text-transform: uppercase;
+ transition: 0.3s;
 }
 .app nav ul li a::after {
  content: "";
@@ -52,6 +56,9 @@ a {
  left: 50%;
  background-color: #fff;
  transition: 0.5s;
+}
+.app nav ul li a:hover {
+ color: #fff;
 }
 .app nav ul li a:hover::after {
  width: 100%;

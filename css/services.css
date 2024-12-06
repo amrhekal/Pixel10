@@ -1,0 +1,144 @@
+/* ==========One Page Style========== */
+.app {
+ position: relative;
+ height: 100vh;
+ overflow: hidden;
+}
+.app .services-text {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ text-align: center;
+ width: 100%;
+ color: #fff;
+ font-size: 22px;
+ letter-spacing: 1.4px;
+ line-height: 35px;
+}
+.app video {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ z-index: -1;
+}
+.app .overlay {
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.3);
+}
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage,
+.owl-item {
+ height: 100%;
+ width: 100%;
+ overflow: hidden;
+}
+.app .owl-carousel .item {
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+ width: 100%;
+ color: #fff;
+}
+.app .owl-carousel .item h2 {
+ font-size: 35px;
+ margin-bottom: 20px;
+ text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ letter-spacing: 1.5px;
+}
+.app .owl-carousel .item p {
+ font-size: 22px;
+ letter-spacing: 1.4px;
+ line-height: 30px;
+ text-align: center;
+ text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.owl-dots {
+ position: absolute;
+ bottom: 10%;
+ width: 100%;
+ z-index: 2;
+ display: flex;
+ padding: 10px 25px;
+ justify-content: space-evenly;
+ transform: translateY(-50%);
+}
+.owl-dots .owl-dot {
+ height: 30px;
+ width: calc(95% / 5);
+ margin-bottom: 10px;
+ position: relative;
+}
+.owl-dots .owl-dot::before {
+ position: absolute;
+ content: "";
+ bottom: -10px;
+ left: 50%;
+ transform: translateX(-50%);
+ background-color: rgba(255, 255, 255, 0.4);
+ height: 3px;
+ transition: 0.3s;
+}
+.owl-dots .owl-dot::after {
+ position: absolute;
+ letter-spacing: 1.5px;
+ width: 100%;
+ bottom: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ color: rgba(255, 255, 255, 0.4);
+ font-size: 27px;
+ transition: 0.3s;
+}
+.owl-dots .owl-dot:hover::before {
+ background-color: #fff;
+}
+.owl-dots .owl-dot:hover::after {
+ color: #fff;
+}
+
+.owl-dots .owl-dot:first-child::before {
+ width: 90%;
+}
+.owl-dots .owl-dot:first-child::after {
+ content: "Interior and Exterior Stills";
+}
+.owl-dots .owl-dot:nth-of-type(2)::before {
+ width: 90%;
+}
+.owl-dots .owl-dot:nth-of-type(2)::after {
+ content: "Animation & Virtual Reality";
+}
+.owl-dots .owl-dot:nth-of-type(3)::before {
+ width: 80%;
+}
+.owl-dots .owl-dot:nth-of-type(3)::after {
+ content: "Interior Design & Styling";
+}
+.owl-dots .owl-dot:nth-of-type(4)::before {
+ width: 70%;
+}
+.owl-dots .owl-dot:nth-of-type(4)::after {
+ content: "Film & Photography";
+}
+.owl-dots .owl-dot:nth-of-type(5)::before {
+ width: 80%;
+}
+.owl-dots .owl-dot:nth-of-type(5)::after {
+ content: "Web, UX, and UI Design";
+}
+
+.owl-dots .owl-dot.active::before {
+ background-color: #fff;
+}
+.owl-dots .owl-dot.active::after {
+ color: #fff;
+}

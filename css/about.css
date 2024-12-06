@@ -36,6 +36,7 @@
  font-size: 35px;
  width: 100%;
  text-align: center;
+ text-transform: uppercase;
 }
 .app .services a {
  animation: colorChange 5s infinite;
