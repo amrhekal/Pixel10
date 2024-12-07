@@ -153,8 +153,13 @@
  .app .owl-carousel .item p {
   font-size: 18px;
  }
+ .owl-dots {
+  justify-content: center;
+  gap: 15px;
+ }
  .owl-dots .owl-dot {
   border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 6px;
   width: 35px;
   height: 35px;
   transition: 0.3s;
